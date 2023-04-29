@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+     integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+     crossorigin=""/>
+     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+     integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+     crossorigin=""></script>
+     <link rel="stylesheet" href="leaflet.css">
+     <script src="//kit.fontawesome.com/87cee28510.js" crossorigin="anonymous"></script>
+    <title>Map Interactive</title>
+</head>
+<body>
+    <nav>
+        <ul> 
+            <li><a href="index.html" title="Page accueil">Accueil</a></li>
+            <li><a href="partenaire.html" title="Vivre la grossesse ensemble">TOI+MOI</a></li>
+            <li><a href="suivi.html" title="Calendrier de suivi">Suivi personnalisé</a></li>
+            <li><a href="projet.html" title="Construire votre projet">Projet de naissance</a></li>
+            <li><a href="http://www.example.com" title="Lire la newsletter">Newsletter</a></li>
+            <li><a href="leaflet.html" title="Raconte moi">StoryMap</a></li>
+            <li><a href="login.html"><i class="fa-solid fa-user-group"></i></a></li>
+        </ul>  
+    </nav>
+    <div id="storymap-title">
+        <p>Our Story Map</p>
+    </div>
+    <div id="map"></div>
+        <dialog id="laModale">
+            <p>Ajouter un nouveau marker :</p>
+            <form id="form" method="dialog">
+                <p>
+                    <label>Titre :
+                        <input type="text" id="titre" />
+                    </label>
+                </p>
+                <p>
+                    <label>Date :
+                        <input type="date" id="date" />
+                    </label>
+                </p>
+                <p>
+                    <label>Image :
+                        <input type="text" id="image" />
+                    </label>
+                </p>
+                <p>
+                    <label>Raconte :
+                        <input type="text" id="raconte" />
+                    </label>
+                </p>
+                <div>
+                    <button value="non">Annuler</button>
+                    <button value="oui">Valider</button>
+                </div>
+            </form>
+        </dialog>
+    <footer>
+            <ul class="footerList">
+                <li><a href="https://www.example.com">Contact</a></li>
+                <li><a href="https://www.example.com">FAQ</a></li>
+                <li><a href="https://www.example.com">Mentions légales</a></li>
+                <li><a href="https://www.example.com">Politique de confidentialité</a></li>
+            </ul>
+            <ul>
+                <li class="reseau"><i class="fa-brands fa-instagram"></i></li>
+                <li class="reseau"><i class="fa-brands fa-twitter"></i></li>
+                <li class="reseau"><i class="fa-brands fa-facebook-f"></i></li>
+            </ul>
+    </footer>
+    <script src="leaflet.js"></script>
+</body>
+</html>
